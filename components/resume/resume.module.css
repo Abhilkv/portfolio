@@ -1,0 +1,90 @@
+.resumeContainer {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.resumeButton {
+    padding: 15px 26px;
+    line-height: 1.15;
+    text-align: center;
+    background: transparent;
+    color: #1e1f28;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    display: inline-block;
+    border: 1px solid #1e1f28;
+    text-transform: uppercase;
+    z-index: 1;
+    overflow: hidden;
+    font-family: "Nunito Sans",sans-serif;
+    font-weight: bold;
+    transition: color .25s ease-in-out,background-color .25s ease-in-out;
+}
+
+.resumeButton:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    background: #1e1f28;
+    outline: 0;
+    border: 1px solid #1e1f28
+}
+
+.about {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about .title {
+    color: #3d4451;
+    font-size: 2.125rem;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Playfair Display";
+    letter-spacing: .5px;
+    padding: 0px 30px;
+}
+
+.about .content {
+    color: #737881;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    margin: 0px 0px;
+}
+
+@media (max-width: 800px) {
+    .resumeContainer {
+        top: -80px !important;
+        max-width: 95%;
+    }
+    .dpImage {
+        display: flex;
+        justify-content: center;
+    }
+    .name {
+        font-size: 20px;
+    }
+    .details {
+        margin-top: 20px;
+    }
+    .fieldValue .field {
+        min-width: 110px !important;
+    }
+}

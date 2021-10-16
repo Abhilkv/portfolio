@@ -1,0 +1,121 @@
+.headerContainer {
+    position: fixed;
+    position: -webkit-sticky;
+    top: 0;
+    height: 100px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,0,0,1) 67%, rgba(48,0,0,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 5px 30px;
+    color: white;
+    z-index: 200;
+    opacity: 1;
+    overflow-x: hidden;
+}
+
+.links {
+    padding: 5px 20px;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.iconContainer {
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.closedDrawer {
+    position: absolute;
+    top: -360px;
+    right: 0;
+    display: flex;
+    z-index: 100;
+    opacity: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #260000;
+    color: white;
+    padding: 10px 20px;
+    transition: all .5s ease-in-out;
+}
+
+
+.openDrawer {
+    transition: all .5s ease-in-out;
+    position: fixed;
+    transform: translateY(420px);
+}
+
+@media (max-width: 800px) {
+    .menuBar {
+        display: none !important;
+    }
+    .hambergerMenue {
+       display: block !important;
+    }
+    .headerContainer {
+        max-height: 70px !important;
+    }
+}
+
+.hambergerMenue {
+    display: none;
+}
+
+.BurgerLinks {
+    padding: 25px 50px;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 0.1px solid white;
+
+}
+
+.cross1 {
+    transform: rotate(-45deg) translate(1px, 1px);
+    transition: all .5s ease-out;
+    background-color: rgb(115, 255, 0);
+    height: 2px;
+    width: 40px;
+  }
+
+  .container {
+    width: 50px;
+    height: 50px
+  }
+
+  .cross2 {
+    transform: rotate(45deg) translate(-1px, -4px);
+    transition: all .5s ease-out;
+    background-color: rgb(115, 255, 0);
+    height: 2px;
+    width: 40px;
+  }
+
+  .lines {
+    transition: all .5s ease-out;
+    background-color: white;
+    height: 2px;
+    width: 40px;
+  }
+
+  .lines_two {
+    transition: all .5s ease-out;
+    background-color: white;
+    height: 2px;
+    width: 40px;
+    margin: 12px 0 12px 0;
+    display: block;
+  }
+
+  .hidden {
+    transform: translate(40px, 0px);
+    transition: all .5s ease-out;
+    background: transparent;
+    height: 2px;
+    width: 40px;
+  }
