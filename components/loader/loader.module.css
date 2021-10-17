@@ -62,15 +62,6 @@
     min-width: 265px;
 }
 
-.screener {
-    z-index: 102;
-    top: 54.5% !important;
-    height: 36px;
-    width: 280px;
-    background-color: black;
-    animation: textScreener 1s ease-in-out  forwards;
-}
-
 .positionText {
     position: absolute;
     top: 52%;
@@ -79,11 +70,6 @@
     filter: contrast(20);
 }
 
-@media (max-width: 800px) { 
-    .screener {
-        top: 55% !important;
-    }
-}
 
 @keyframes loaderRemove {
     0% {
@@ -91,16 +77,6 @@
     }
     100% {
         opacity: 0;
-    }
-    
-}
-
-@keyframes textScreener {
-    0% {
-        width: 280px;
-    }
-    100% {
-        width: 0px;
     }
     
 }

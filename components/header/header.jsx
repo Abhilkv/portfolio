@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ReactDrawer from 'react-drawer';
 import Image from 'next/image'
 
 import Logo from '../../public/header/logo.png';
@@ -19,7 +18,7 @@ const links = [{
 },
 {
     name: 'EXPERIENCE',
-    id: '#home'
+    id: '#experience'
 },
 {
     name: 'PROJECTS',
@@ -34,7 +33,7 @@ const Header = () => {
       <>
         <div className={Styles.headerContainer} id="top">
             <a className={Styles.iconContainer} href="#home">
-                <Image src={Logo} alt="Abhil" width={50} height={50} />
+                <Image src={Logo} alt="Abhil" width={90} height={50} />
             </a>
             <>
                 <div className={Styles.menuBar}>
@@ -53,7 +52,7 @@ const Header = () => {
         </div>
         <div className={burgerMenu ? `${Styles.closedDrawer} ${Styles.openDrawer}` : Styles.closedDrawer} onTouchMove={() => { setBurgerMenu(false); }}>
             {links.map((link) => (
-                <a href={link.id} key={link.id} className={Styles.BurgerLinks}>
+                <a href={link.id} key={link.id} className={Styles.BurgerLinks} onClick={() => { setBurgerMenu(false); }}>
                     {link.name}
                 </a>
             ))}

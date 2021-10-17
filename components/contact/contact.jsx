@@ -26,7 +26,7 @@ const  experience = () => {
 
 const data = [{
   field: 'AGE',
-  value: calculateAge(1997)
+  value: calculateAge(1996)
 },
 {
   field: 'ADDRESS',

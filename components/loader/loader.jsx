@@ -16,7 +16,6 @@ const DotLoader = () => {
         <h1 className={`${Styles.introText} ${Styles.positionText}`}>
           Code with a smile
         </h1>
-        <div className={`${Styles.screener} ${Styles.positionText}`}/>
       </div>
     );
 };

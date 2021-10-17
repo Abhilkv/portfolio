@@ -1,6 +1,6 @@
 .contactContainer {
     position: relative;
-    top: -20%;
+    top: -10%;
     background-color: #fff;
     padding: 30px 30px;
     box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
@@ -86,7 +86,7 @@
     .contactContainer {
         flex-direction: column;
         padding: 20px 10px !important;
-        top: -7%;
+        top: -5%;
         width: 99% !important;
     }
     .dpImage {

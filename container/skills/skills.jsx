@@ -68,13 +68,13 @@ const skills = [
 
 const Resume = () => {
     return (
-      <div className={Styles.skillsContainer}  id="skills">
-         <h2 className={Styles.title}>Professional Skills</h2>
-         <div className={Styles.skillBox}>
+      <div className={Styles.skillsContainer}>
+         <h2 className={`${Styles.title} wow bounceInLeft`} data-wow-duration="1s" data-wow-delay="0.2s">Professional Skills</h2>
+         <div className={`${Styles.skillBox} wow bounceInRight`} data-wow-duration="1s" data-wow-delay="0.3s" id="experience">
              {skills.map((skill) => (
-                 <>
+                 <div key={skill.tech}>
                     <ProgressLine tech={skill.tech} rating={skill.rating} />
-                 </>
+                 </div>
              ))}
          </div>
       </div>

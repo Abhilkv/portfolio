@@ -14,7 +14,7 @@ const DotLoader = (props) => {
           </span>
         </div>
         <div className={Styles.progress}>
-          <div className={Styles.progressLine} style={{ width: props.rating}}/>
+        <div className={Styles.progressLine} style={{ width: props.rating}}/>
         </div>
       </div>
     );
