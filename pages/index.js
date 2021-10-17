@@ -9,7 +9,7 @@ import Contact from '../components/contact/contact';
 import Resume from '../components/resume/resume';
 import Skills from '../container/skills/skills';
 import Experience from '../container/experience/experience';
-import Educetion from '../container/Education/education'
+import Educetion from '../container/education/education'
 import styles from '../styles/Home.module.css'
 
 const isServer = typeof window === 'undefined'
