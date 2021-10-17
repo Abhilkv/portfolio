@@ -37,7 +37,7 @@ const Home = () => {
         {loading && <Loader />}
         <Header />
         <div className={styles.codingBgImage}>
-          <Image src={Coding} alt="Vercel Logo" height={3000} className={styles.bgImage}/>
+          <Image src={Coding} alt="Vercel Logo" height={3000} className={styles.bgImage} loader={() => {}}/>
         </div>
         <div className={styles.contentWrapper}>
           <Contact />
