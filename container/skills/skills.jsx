@@ -21,18 +21,6 @@ const skills = [
         rating: '75%'
     },
     {
-        tech: 'React Native',
-        rating: '60%'
-    },
-    {
-        tech: 'JQuery',
-        rating: '50%'
-    },
-    {
-        tech: 'Git',
-        rating: '60%'
-    },
-    {
         tech: 'Gatsby.JS',
         rating: '65%'
     },
@@ -41,8 +29,24 @@ const skills = [
         rating: '65%'
     },
     {
-        tech: 'Node.Js',
+        tech: 'React Native',
+        rating: '60%'
+    },
+    {
+        tech: 'JQuery',
+        rating: '50%'
+    },
+    {
+        tech: 'Mongo DB',
+        rating: '30%'
+    },
+    {
+        tech: 'Node.JS',
         rating: '20%'
+    },
+    {
+        tech: 'SQL',
+        rating: '50%'
     },
     {
         tech: 'liquid',
@@ -53,12 +57,12 @@ const skills = [
         rating: '20%'
     },
     {
-        tech: 'Shopify',
-        rating: '65%'
+        tech: 'Machine Learning',
+        rating: '50%'
     },
     {
-        tech: 'Strikingly',
-        rating: '60%'
+        tech: 'Shopify',
+        rating: '65%'
     },
     {
         tech: 'Webflow',
@@ -73,7 +77,7 @@ const Resume = () => {
          <div className={`${Styles.skillBox} wow bounceInRight`} data-wow-duration="1s" data-wow-delay="0.3s" id="experience">
              {skills.map((skill) => (
                  <div key={skill.tech}>
-                    <ProgressLine tech={skill.tech} rating={skill.rating} />
+                    <ProgressLine tech={skill.tech} rating={skill.rating} showRating={false} />
                  </div>
              ))}
          </div>

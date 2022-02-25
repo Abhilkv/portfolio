@@ -29,15 +29,15 @@ const Home = () => {
     <div className={styles.container}>
       <Head>
         <title>Abhil</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/titleIcon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"/>
       </Head>
       <main className={styles.main} id="home">
         {loading && <Loader />}
         <Header />
         <div className={styles.codingBgImage}>
-          <Image src={Coding} alt="Vercel Logo" height={3000} className={styles.bgImage} loader={() => {}}/>
+          <Image src={Coding} alt="Vercel Logo" height={3000} className={styles.bgImage}/>
         </div>
         <div className={styles.contentWrapper}>
           <Contact />

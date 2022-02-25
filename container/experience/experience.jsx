@@ -13,7 +13,7 @@ const Experience = () => {
              <div className={Styles.inner}>
                  {ExperienceData.map((data, index) => (
                      <div key={data.companyName}>
-                        <ExperienceCard  data={data} readMore={true}/>
+                        <ExperienceCard  data={data} readMore={false}/>
                      </div>
                  ))}
              </div>

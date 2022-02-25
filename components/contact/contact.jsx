@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image'
 
 import MessageBox from '../messageBox/messageBox';
-import Dp from '../../public/contact/dp.png';
+import Dp from '../../public/contact/abhil_dp.jpg';
 import LinkedIn from '../../public/contact/LinkedIn.svg'
 import Facebook from '../../public/contact/facebook.svg'
 import Git from '../../public/contact/git.svg'
@@ -72,7 +72,7 @@ const About = () => {
     return (
       <div className={Styles.contactContainer} id="contact">
         <div className={Styles.dpImage}>
-           <Image src={Dp} alt="Abhil" height={200} width={200} />
+           <Image src={Dp} alt="Abhil" height={250} width={200} />
         </div>
         <div className={Styles.details}>
           <MessageBox message="HELLO" />

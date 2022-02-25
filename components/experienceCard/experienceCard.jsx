@@ -9,7 +9,7 @@ const ExperienceCard = (props) => {
       <div className={`${Styles.cardWrapper} wow headShake`} data-wow-duration="0.5s" data-wow-delay="0.2s">
         <div className={Styles.innerBox}>
           <div className={Styles.timePeriod}><MessageBox message={time}/></div>
-          <a href={link}>{companyName}</a>
+          <a href={link} target="_blank" rel="noreferrer">{companyName}</a>
           <h4>{position}</h4>
           <p>{description}</p>
           {props.readMore && (
