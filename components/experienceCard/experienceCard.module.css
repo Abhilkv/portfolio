@@ -12,13 +12,6 @@
 .cardWrapper:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
-@keyframes example {
-    from {}
-    to { 
-        
-    }
-  }
   
 
 .innerBox {
@@ -28,8 +21,12 @@
     border-style: solid;
     background-color: #fff;
     box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
-    min-height: 250px;
+    min-height: 272px;
     min-width: 400px;
+}
+
+.innerBox h6 {
+    margin: 0px;
 }
 
 .timePeriod {

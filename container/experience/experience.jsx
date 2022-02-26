@@ -8,7 +8,7 @@ import Styles from './experience.module.css';
 const Experience = () => {
     return (
       <div className={Styles.experience}>
-         <h2 className={`${Styles.title} wow heartBeat`} data-wow-duration="1s" data-wow-delay="0.2s">Work Experience</h2>
+         <h2 className={`${Styles.title} wow heartBeat`} data-wow-duration="1s" data-wow-delay="0.5s">Work Experience</h2>
          <div className={Styles.experienceList}>
              <div className={Styles.inner}>
                  {ExperienceData.map((data, index) => (

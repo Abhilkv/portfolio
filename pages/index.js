@@ -10,6 +10,7 @@ import Resume from '../components/resume/resume';
 import Skills from '../container/skills/skills';
 import Experience from '../container/experience/experience';
 import Educetion from '../container/education/education'
+import Projects from '../container/projects/projects'
 import styles from '../styles/Home.module.css'
 
 const isServer = typeof window === 'undefined'
@@ -46,6 +47,7 @@ const Home = () => {
           <Experience />
           <Educetion />
         </div>
+        <Projects />
         <div className={styles.professionalDetails}>
         </div>
       </main>
