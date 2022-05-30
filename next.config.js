@@ -1,4 +1,6 @@
 module.exports = {
+  basePath: '/portfolio',
+  assetPrefix: '/portfolio', 
   reactStrictMode: true,
   images: {
     loader: 'akamai',
@@ -8,3 +10,4 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
 }
+ 
