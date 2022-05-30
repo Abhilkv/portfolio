@@ -1,7 +1,7 @@
 import AlgoTrade from '../../public/projects/algo-trade.webp';
 import Helmet from '../../public/projects/helmet.gif';
 import Trade from '../../public/projects/trade.jpeg';
-import Wynss from '../../public/projects/Wynss.png';
+import Wynss from '../../public/projects/wynss.png';
 
 const experienceData = [
     {
