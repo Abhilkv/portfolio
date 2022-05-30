@@ -7,7 +7,7 @@ import Facebook from '../../public/contactDetals/facebook.svg'
 import Git from '../../public/contactDetals/git.svg'
 import Instagram from '../../public/contactDetals/instagram.svg'
 import Email from '../../public/contactDetals/email.svg'
-import LinkedIn from '../../public/contactDetals/LinkedIn.svg'
+import LinkedIn from '../../public/contactDetals/linkedIn.svg'
 import WhatsApp from '../../public/contactDetals/whatsApp.svg'
 
 
