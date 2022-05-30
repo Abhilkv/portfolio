@@ -13,6 +13,7 @@ import Educetion from '../container/education/education'
 import Projects from '../container/projects/projects'
 import styles from '../styles/Home.module.css'
 
+const prefix = '/portfolio';
 const isServer = typeof window === 'undefined'
 const WOW = !isServer ? require('wow.js') : null
 
@@ -41,7 +42,7 @@ const Home = () => {
         {loading && <Loader />}
         <Header />
         <div className={styles.codingBgImage}>
-          <Image src={Coding} alt="Vercel Logo" height={3000} className={styles.bgImage} priority={true} loading="eager"/>
+          <Image src={prefix + Coding} alt="Vercel Logo" height={3000} className={styles.bgImage} priority={true} loading="eager"/>
         </div>
         <div className={styles.mainContainer}>
           <div className={styles.contentWrapper}>
