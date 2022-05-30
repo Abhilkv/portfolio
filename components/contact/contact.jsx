@@ -2,13 +2,13 @@ import React from 'react';
 import Image from 'next/image'
 
 import MessageBox from '../messageBox/messageBox';
-import Dp from '../../public/contact/abhil_dp.jpg';
-import LinkedIn from '../../public/contact/LinkedIn.svg'
-import Facebook from '../../public/contact/facebook.svg'
-import Git from '../../public/contact/git.svg'
-import Instagram from '../../public/contact/instagram.svg'
-import Email from '../../public/contact/email.svg'
-import WhatsApp from '../../public/contact/whatsApp.svg'
+import Dp from '../../public/contactDetals/abhil_dp.jpg';
+import Facebook from '../../public/contactDetals/facebook.svg'
+import Git from '../../public/contactDetals/git.svg'
+import Instagram from '../../public/contactDetals/instagram.svg'
+import Email from '../../public/contactDetals/email.svg'
+import LinkedIn from '../../public/contactDetals/LinkedIn.svg'
+import WhatsApp from '../../public/contactDetals/whatsApp.svg'
 
 
 import Styles from './contact.module.css';
