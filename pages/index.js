@@ -21,7 +21,10 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => { setLoading(false); }, [2015]);
+    window.onload = () => {
+      setLoading(false);
+    }
+    // setTimeout(() => {  }, [2015]);
     new WOW().init();
     console.log(<h1>Abhil</h1>)
   }, []);
@@ -38,14 +41,16 @@ const Home = () => {
         {loading && <Loader />}
         <Header />
         <div className={styles.codingBgImage}>
-          <Image src={Coding} alt="Vercel Logo" height={3000} className={styles.bgImage}/>
+          <Image src={Coding} alt="Vercel Logo" height={3000} className={styles.bgImage} priority={true} loading="eager"/>
         </div>
-        <div className={styles.contentWrapper}>
-          <Contact />
-          <Resume />
-          <Skills />
-          <Experience />
-          <Educetion />
+        <div className={styles.mainContainer}>
+          <div className={styles.contentWrapper}>
+            <Contact />
+            <Resume />
+            <Skills />
+            <Experience />
+            <Educetion />
+          </div>
         </div>
         <Projects />
         <div className={styles.professionalDetails}>

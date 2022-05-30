@@ -19,8 +19,13 @@
   height: 50vh;
 }
 
+.mainContainer {
+  background-color: #f7dfc6;
+}
+
 .contentWrapper {
   background-color: #d7d7d7;
+  border-radius: 0px 0% 0px 200px;
   padding: 0px 15px;
   width: 100%;
   display: flex;

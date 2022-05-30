@@ -8,6 +8,8 @@ import Facebook from '../../public/contact/facebook.svg'
 import Git from '../../public/contact/git.svg'
 import Instagram from '../../public/contact/instagram.svg'
 import Email from '../../public/contact/email.svg'
+import WhatsApp from '../../public/contact/whatsApp.svg'
+
 
 import Styles from './contact.module.css';
 
@@ -51,16 +53,20 @@ const socialMedia = [
     link: 'https://www.linkedin.com/in/abhil-vidhyadharan-950b65197/'
   },
   {
-    image:  Facebook,
-    link: 'https://www.facebook.com/kv.abhil/'
-  },
-  {
     image:  Git,
     link: 'https://github.com/Abhilkv?tab=repositories'
   },
   {
     image: Instagram,
-    link: ''
+    link: 'https://www.instagram.com/abhil_kv/'
+  },
+  {
+    image:  Facebook,
+    link: 'https://www.facebook.com/kv.abhil/'
+  },
+  {
+    image: WhatsApp,
+    link: 'https://www.facebook.com/kv.abhil/'
   },
   {
     image: Email,
@@ -72,7 +78,7 @@ const About = () => {
     return (
       <div className={Styles.contactContainer} id="contact">
         <div className={Styles.dpImage}>
-           <Image src={Dp} alt="Abhil" height={250} width={200} />
+           <Image src={Dp} alt="Abhil" height={250} width={200} loading="eager"/>
         </div>
         <div className={Styles.details}>
           <MessageBox message="HELLO" />
@@ -96,7 +102,7 @@ const About = () => {
           <div className={Styles.socialMedia}>
             {socialMedia.map((media) => (
               <a key={media.link} href={media.link} className={Styles.link} target="_blank" rel="noreferrer">
-                <Image src={media.image} alt="Social Media" height={30} width={30} />
+                <Image src={media.image} alt="Social Media" height={30} width={30} loading="eager"/>
               </a>
             ))}
           </div>

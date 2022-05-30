@@ -33,7 +33,7 @@ const Header = () => {
       <>
         <div className={Styles.headerContainer} id="top">
             <a className={Styles.iconContainer} href="#home">
-                <Image src={Logo} alt="Abhil" width={90} height={50} />
+                <Image src={Logo} alt="Abhil" width={90} height={50} loading="eager"/>
             </a>
             <>
                 <div className={Styles.menuBar}>

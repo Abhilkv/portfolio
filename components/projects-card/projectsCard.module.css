@@ -1,9 +1,11 @@
 .flipBox {
     background-color: transparent;
     width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
+    min-height: 300px;
+    border: 1px solid transparent;
     perspective: 1000px;
+    margin: 15px;
+    cursor: pointer;
   }
   
   .flipBoxInner {
@@ -30,9 +32,45 @@
     background-color: #bbb;
     color: black;
   }
+  .flipBoxFront h2 {
+    color: rgb(144, 126, 126);
+    size: 30px !important;
+  }
+
+  .flipBoxFront p {
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .flipBoxFront span {
+    font-weight: 200;
+    margin-left: 10px;
+  }
+
+  .flipBoxFront .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
   
   .flipBoxBack {
-    background-color: dodgerblue;
+    background-color: dodgerblue !important;
     color: white;
+    text-align: left;
+    padding: 20px;
     transform: rotateY(180deg);
+    height: auto;
+    min-height: 300px;
+    border: 0px solid gray !important;
+  }
+
+  .flipBoxBack h2 {
+    color: rgb(250, 180, 83);
+    size: 30px !important;
+  }
+
+  .flipBoxBack b {
+    color: rgb(241, 166, 166);
+    size: 15px !important;
   }

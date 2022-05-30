@@ -71,8 +71,9 @@
 }
 
 .socialMedia {
-    padding: 10px 0;
+    height: 60px;
     background-color: #1e1f28;
+    border-radius: 20px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -80,6 +81,14 @@
 }
 .link {
     padding: 0px 10px;
+}
+
+.link:hover {
+    background-color: #856004;
+    transition: all 0.5s;
+    padding: 15px;
+    border-radius: 50%;
+    transform: scale(1.2);
 }
 
 @media (max-width: 1000px) {
