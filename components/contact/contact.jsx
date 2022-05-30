@@ -47,29 +47,31 @@ const data = [{
   value: experience()
 }];
 
+const prefix = '/portfolio';
+
 const socialMedia = [
   {
-    image: LinkedIn,
+    image: prefix + LinkedIn,
     link: 'https://www.linkedin.com/in/abhil-vidhyadharan-950b65197/'
   },
   {
-    image:  Git,
+    image:  prefix + Git,
     link: 'https://github.com/Abhilkv?tab=repositories'
   },
   {
-    image: Instagram,
+    image: prefix + Instagram,
     link: 'https://www.instagram.com/abhil_kv/'
   },
   {
-    image:  Facebook,
+    image:  prefix + Facebook,
     link: 'https://www.facebook.com/kv.abhil/'
   },
   {
-    image: WhatsApp,
+    image: prefix + WhatsApp,
     link: 'https://www.facebook.com/kv.abhil/'
   },
   {
-    image: Email,
+    image: prefix + Email,
     link: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kv.abhil96@gmail.com'
   }
 ]
